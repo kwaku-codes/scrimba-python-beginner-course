@@ -1,0 +1,3 @@
+This is a directory to keep track of all the coding challenges from my Learn Python Beginners course on Scrimba. 
+The whole idea is I want to be able to track my progress and have these challenges backed up so they can be a live tracker of how my skills progress throughout this course 
+You will often see the same python script with a number attached this is becasue the course often goes back to get you to add your new learned skills to initial coding challenges to improve your scripts. To ensure there is a differentiator as I haven't been tracking this whole challenge in Git from the beginning. I have added numbers to the updated challenge code like 2, 3 or 4 and this convention will remain the same throughout. 
