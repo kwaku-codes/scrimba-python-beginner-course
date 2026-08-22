@@ -17,19 +17,24 @@
 
 
 event = input("What is the name of the event you want to split the bill for? ")
-cost = input("How much did the event cost? ")
-service_charge = input("Was there a tip or a service charge? Enter a whole number (e.g. 20 for 20%: ")
-group_size = input("How many people attended? ")
+cost = float(input("How much did the event cost? "))
+service_charge =int(input("Was there a tip or a service charge? Enter a whole number (e.g. 20 for 20%: "))
+group_size = int(input("How many people attended? "))
 grand_total = 330
 total_per_person = 110
 
 print("Welcome to PayUp!")
-print() 
+print()
 print(f"Here's the breakdown for {event}:")
 print()
 print(f"Cost: ${cost}")
+print(type(cost))
+print()
 print(f"Service charges: ${service_charge}")
+print(type(service_charge)) 
+print()
 print(f"Group size: {group_size}")
+print(type(group_size))
 print(f"Grand total: ${grand_total}")
 print()
 print(f"Each person must PayUp: ${total_per_person}")
