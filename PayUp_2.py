@@ -52,9 +52,39 @@
 #    Save it to grand_total.
 # 3. Divide grand_total by group_size to get total_per_person.
 
+# event = input("What is the name of the event you want to split the bill for? ")
+# cost = float(input("How much did the event cost? "))
+# service_charge =int(input("Was there a tip or a service charge? Enter a whole number (e.g. 20 for 20%: "))
+
+# service_charge_total = cost * service_charge / 100
+
+# group_size = int(input("How many people attended? "))
+# grand_total = cost + service_charge_total 
+# total_per_person = grand_total / group_size
+
+# print("Welcome to PayUp!")
+# print()
+# print(f"Here's the breakdown for {event}:")
+# print()
+# print(f"Cost: ${cost}")
+# print()
+# print(f"Service charges: ${service_charge_total}")
+# print()
+# print(f"Group size: {group_size}")
+# print(f"Grand total: ${grand_total}")
+# print()
+# print(f"Each person must PayUp: ${total_per_person}")
+# print()
+# print(type(cost))
+# print(type(service_charge)) 
+# print(type(group_size))
+
+
+#=========================== CHALLENGE CONTINUES (Format Floats Inside F-Strings)========================================================
+
 event = input("What is the name of the event you want to split the bill for? ")
 cost = float(input("How much did the event cost? "))
-service_charge =int(input("Was there a tip or a service charge? Enter a whole number (e.g. 20 for 20%: "))
+service_charge =int(input("Was there a tip or a service charge? Enter a whole number (e.g. 20 for 20%: ").strip("%"))
 
 service_charge_total = cost * service_charge / 100
 
@@ -66,14 +96,14 @@ print("Welcome to PayUp!")
 print()
 print(f"Here's the breakdown for {event}:")
 print()
-print(f"Cost: ${cost}")
+print(f"Cost: ${cost:.2f}")
 print()
-print(f"Service charges: ${service_charge_total}")
+print(f"Service charges: ${service_charge_total:.2f}")
 print()
 print(f"Group size: {group_size}")
 print(f"Grand total: ${grand_total}")
 print()
-print(f"Each person must PayUp: ${total_per_person}")
+print(f"Each person must PayUp: ${total_per_person:.2f}")
 print()
 print(type(cost))
 print(type(service_charge)) 
