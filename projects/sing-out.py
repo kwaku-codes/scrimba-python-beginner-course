@@ -10,6 +10,7 @@ def show_queue(queue):
         print(f"{name} - {song}")
     print()
 
+# Function stubs go here 
 
 def add_singer(queue):
     name = input("Singer name: ")
